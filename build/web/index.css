@@ -1,0 +1,27 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    background-color: wheat;
+    
+}
+header{
+       background: #f5a306;
+    color:white;
+    height: 50px;
+    padding: 17px 30px 30px 370px;
+    border-radius: 120px 120px 120px 120px;
+    margin: 4px 59px 0px 84px;
+    
+}  
+h1
+{
+    margin:7px 0px 0px -346px;
+}
+#reg
+{
+    margin:82px 0px 0px 142pxx;
+    background-color: brown;
+    color: white;
+    padding:10px 22px;
+    border-radius: 36px 36px 36px 36px;
+}

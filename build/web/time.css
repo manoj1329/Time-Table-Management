@@ -1,0 +1,23 @@
+.time{
+font-size: 20pt;
+color:brown;
+}
+header{
+    background: rgb(20, 4, 34);
+    color:white;
+    height: 50px;
+    padding: 20px 30px 30px 420px;
+    
+}
+.btt{
+   .btt input[type="submit"]{
+    border: none;
+    outline: none;  
+    background: blue;
+    height:50px;
+    width: 300px;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+}

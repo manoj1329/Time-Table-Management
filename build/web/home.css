@@ -1,0 +1,97 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    background-color: violet;
+    
+}
+
+header{
+    background: rgb(20, 4, 34);
+    color:white;
+    height: 50px;
+    padding: 20px 30px 30px 370px;
+   border-radius: 0px 0px 162px 162px;
+}   
+.wel{
+    padding:230px;
+    font-size:-webkit-xxx-large;
+    font-weight:bold;
+    margin: 10px 10px 10px 250px;
+}
+form{
+    padding:0px;
+    margin:0;
+}
+
+ 
+ 
+ul{
+    position: absolute;
+    top: 75%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    margin: 0;
+    padding:0 ;
+    display: flex;
+    
+}
+ul li{
+    list-style: none;
+    padding: 20px 20px 150px 20px;
+}
+ul li a{
+    position: relative;
+    display: block;
+    padding: 10px 30px;
+    text-align: center;
+    font-size: 16px;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.5s;
+    font-weight: bold;
+    margin: 10px 10px 556px -6px;
+}
+ul li a:hover{
+    color: #5C5555;
+
+}
+ul li a:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 2px;
+    background: black;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition:transform .9s;
+   
+}
+ul li a:hover:before{
+    transform: scaleX(1);
+    transform-origin: left;
+
+
+}
+ul li a:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right:0;
+    width: 100%;
+    height: 2px;
+    background: black;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition:transform .9s;
+}
+ul li a:hover:after{
+    transform: scaleX(1);
+    transform-origin: right;
+
+
+}

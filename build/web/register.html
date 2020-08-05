@@ -1,0 +1,141 @@
+<html>
+    <head>
+        <title>registration</title>
+        <link href="register.css" rel="stylesheet"/>
+        <script>
+            function validate()
+            {
+                var a=document.getElementById("p").value;
+                var b=document.getElementById("cp").value;
+                if(a!=b)
+                {
+                    document.getElementById("msg").innerHTML="*Passwords Do Not Match!";
+                    return false;
+                }
+                else
+                {
+                alert("Registration sucessfull");    
+            }
+            
+            
+        }
+        </script>
+        </head>
+<body>
+    <header>
+<center>
+    <h1>Registration</h1>
+</center>
+    </header>
+<form method="post" action="register.jsp">
+    <div class="box">
+        <table class="tab">
+            <br>
+        <center>
+            <label>
+                <b>Student ID</b>
+            </label>
+        </center>
+        <center>
+        <input type="text" name="stdid" style="border-radius: 23px 23px 23px 23px;padding: 6px 0px 8px 10px" placeholder="Enter Your USN" required/>
+        </center>
+            <br>
+        <center>
+            <label>
+                <b>Student Name</b>
+            </label>
+        </center>
+        <center>
+             <input type="text" name="stdname" style="border-radius: 23px 23px 23px 23px;padding: 6px 0px 8px 10px" placeholder="Enter Your Name" required/>
+        </center>
+            <br>
+        <center>
+            <label>
+                <b>Department</b>
+            </label>
+        </center>
+        <center>
+            <div>
+                        <select name="dept" style="border-radius: 23px 23px 23px 23px;
+    padding: 6px 0px 8px 10px;" required>
+                            <option value="-1"> Select Department</option>
+                                <option value="cse">CSE</option>
+                                <option value="mech">MECH</option>
+                                <option value="ece">ECE</option>
+                                <option value="tce">TCE</option>
+                            </select>
+            </div>
+        </center>
+            <br>
+        <center>
+            <label>
+                <b>Semester</b>
+            </label>
+        </center>
+        <center>
+                            <select name="sem" style="border-radius:23px 23px 23px 23px;padding: 6px 0px 8px 10px" required>
+                                <option value="1">I</option>
+                                <option value="2">II</option>
+                                <option value="3">III</option>
+                                <option value="4">IV</option>
+                                <option value="5">V</option>
+                                <option value="6">VI</option>
+                                <option value="7">VII</option>
+                                <option value="8">VIII</option> 
+                            </select>
+        </center>
+            <br>
+        <center>
+            <label>
+                <b>Section</b>
+            </label>
+        </center>
+        <center>
+                            <input type="radio" name="section" style="padding: 6px 0px 8px 10px"value="A" checked required/>A 
+                            <input type="radio" name="section" style="padding: 6px 0px 8px 10px"value="B" />B
+        </center>
+            <br>
+            <center>
+            <label>
+                <b>Password</b>
+            </label>
+        </center>
+        <center>
+                        <input type="password" name="pwd" id="p" style="border-radius: 23px 23px 23px 23px;padding: 6px 0px 8px 10px"placeholder="Enter Password" required/>
+        </center>
+            <br>
+        <center>
+            <label>
+                <b>Confirm Password</b>
+            </label>
+        </center>
+        <center>
+            <input type="password" name="cpwd"style="border-radius: 23px 23px 23px 23px;padding: 6px 0px 8px 10px" id="cp" placeholder=""/>
+         </center>
+            <center>
+                   <span id="msg" style="color:red;margin: 0px 0px 0px 190px"></span>
+            </center>
+             <br>
+        <center>
+            <label>
+                <b>Email</b>
+            </label>
+        </center>
+        <center>
+                <input type="email" name="email" style="border-radius: 23px 23px 23px 23px;padding: 6px 0px 8px 10px"placeholder="Enter Your E-Mail" required/>                       
+        </center>
+            <br>
+        <center>
+                <button type="register" name="register" onClick="return validate()" id="reg">Register</button>
+        </center>
+                </form>   
+</table>    
+</div>
+    <form >
+        <br>
+        <center>
+        <span class="" ><b>Already an User</b><a href="login.html">Click Here...</a></span>
+        </center>
+    </form>
+</body>
+</html>

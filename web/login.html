@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <title>timetable</title>
+        <link rel="icon" type="image/png" href="favicon.ico"/>
+        <link href="index.css" rel="stylesheet"/>
+        <script> 
+                        function pswd()
+                        {
+                         var a=document.getElementById("pwd")   
+                         if(a.type=="password")
+                         {
+                             a.type="text";
+                         }
+                         else
+                         {
+                             a.type="password";
+                         }
+                        }
+        </script>
+    </head>
+<body>
+    <center>
+        <header>
+            <h1>Welcome to TimeTable Management</h1>
+        </header>
+    </center>
+    <form name="login" method="post" action="slogin.jsp">
+        <div style="margin:255px 0px 0px -570px">
+            <center>
+                <img src="student.jpg" width="350" height="150" style="margin:-88px 0px 0px 0px;width: 430px;
+    border-radius: 23px;
+    height: 300px;" >
+            </center>
+        </div>
+            <br>
+            <div style="margin: -299px 0px 0px 349px">
+            <center>
+                <div style="margin: 0px 0px 0px 0px">
+            <label>
+                <b>USN</b>
+            </label>
+            </div>
+            </center>
+            <br>
+            <center>
+                <div style="margin: 3px 0px 0px 35px">
+                <input type="text" name="uname" id="uname" style="margin: 0px 0px 0px -30px;border-radius: 23px 23px 23px 23px;padding: 6px 0px 8px 10px" placeholder="Enter Your USN" required/>
+                </div>
+            </center>    
+                <br>
+                <center>
+                    <div style="margin: 0px 0px 0px 0px">
+            <label>
+                <b>Password</b>
+            </label>
+                </div>
+                </center>
+                <br>
+                <center>
+                    <div style="margin: 0px 0px 0px 152px">
+                <input type="password" name="pwd" style="margin: 0px 0px 0px -30px;border-radius: 23px 23px 23px 23px;padding: 6px 0px 8px 10px" placeholder="Enter Password"  id="pwd" required/> 
+                <input type="checkbox" name="cbox" onClick="pswd()" />Show Password
+                    </div>
+                </center>
+                <br>
+                 <center>
+                    <button type="signin" name="signin" style="border-radius: 23px;
+    padding: 5px 12px 4px 13px;" id="signin">Sign In</button>
+                </center>
+                <br>
+                 <center>
+        <span class="" ><b>New Student Register =></b><a href="register.html">Click Here...</a></span>
+        </center>
+                <br>
+                <br>
+                 <center>
+        <span class="" ><b>Teacher SigIn =></b><a href="tlogin.html">Click Here...</a></span>
+        </center>
+                </div>
+       </form>
+    </body>
+</html>

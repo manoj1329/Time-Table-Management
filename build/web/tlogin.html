@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <title>timetable</title>
+        <link href="index.css" rel="stylesheet"/>
+        <script>
+            function validate()
+                    {
+                    var uname = document.getElementById("uname").value;
+                            var pass = document.getElementById("pwd").value;
+                            if (uname ==usrname && pass==pwd)
+                            {
+                            return true;
+                                    }
+                            else 
+                            {
+                            return false;
+                                    }
+                    }
+                    function pswd()
+                        {
+                         var a=document.getElementById("pwd")   
+                         if(a.type==="password")
+                         {
+                             a.type="text";
+                         }
+                         else
+                         {
+                             a.type="password";
+                         }
+                        }
+        </script>
+    </head>
+<body>
+    <center>
+        <header>
+            <h1>Welcome to TimeTable Management</h1>
+        </header>
+    </center>
+    <form method="post" action="tlogin.jsp">
+        <div style="margin:255px 0px 0px -570px">
+            <center>
+                <img src="teacher.jpg" width="350" height="150" style="margin:-88px 0px 0px 0px;width: 430px;
+    border-radius: 23px;
+    height: 300px;">
+            </center>
+            <br>
+            <div style="margin: -301px 0px 0px 914px">
+            <center>
+                <div style="margin: 0px 0px 0px 0px">
+            <label>
+                <b>Teacher ID</b>
+            </label>
+            </div>
+            </center>
+                <br>
+            <center>
+                <div style="margin: 3px 0px 0px 35px">
+                <input type="text" name="uname" id="uname" style="border-radius: 23px 23px 23px 23px;padding: 6px 0px 8px 10px" placeholder="Enter Teacher ID" required/>
+                </div>
+            </center>    
+                <br>
+                <center>
+            <label>
+                <div style="margin: 0px 0px 0px 0px">
+                <b>Password</b>
+                </div>
+            </label>
+                </center>
+                <br>
+                <center>
+                    <div style="margin: 0px 0px 0px 152px">
+                <input type="password" name="pwd"  style="border-radius: 23px 23px 23px 23px;padding: 6px 0px 8px 10px" placeholder="Enter Password" required id="pwd"/> 
+                <input type="checkbox" name="cbox" onclick="pswd()" value="ON" />Show Password
+                    </div>
+                </center>
+                <br>
+                <center>
+                    <button type="signin" name="signin" onsubmit="validate" style="border-radius: 23px;
+    padding: 5px 12px 4px 13px;"id="signin">Sign In</button>
+                </center>
+                <br>
+                 <center>
+        <span class="" ><b>New Teacher Register->></b><a href="tregister.html">Click Here...</a></span>
+        </center>
+                <br>
+                <br>
+                 <center>
+         <span class="" ><b>Student SigIn->></b><a href="login.html">Click Here...</a></span>
+                 </center>
+        </div>
+       </form>
+    
+       
+    
+</body>
+</html>

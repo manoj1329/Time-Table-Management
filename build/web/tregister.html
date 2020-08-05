@@ -1,0 +1,125 @@
+<html>
+    <head>
+        <title>tregister</title>
+        <link href="register.css" rel="stylesheet"/>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+             function validate()
+            {
+                var a=document.getElementById("p").value;
+                var b=document.getElementById("cp").value;
+                if(a!=b)
+                {
+                    document.getElementById("msg").innerHTML="*Passwords Do Not Match!";
+                    return false;
+                }
+            }
+            </script>
+    </head>
+    <body>
+        <form method="post" action="tregister.jsp">
+            <header>
+                <center>
+                    <h1>Lecturer's Registration</h1>
+                </center>
+            </header>
+        <br>
+            <center>
+                <label>
+                    <div style="margin: 0px 0px 0px 0px">
+                    <b>ID</b>
+                    </div>
+                </label>
+            </center>
+            <center>
+                <div style="margin: 0px 0px 0px 0px">
+                <input type="text" name="tid" style="border-radius: 23px 23px 23px 23px;padding: 6px 0px 8px 10px"placeholder="Enter Your ID" required/>
+                </div>
+            </center>
+            <br>
+            <center>
+                <label>
+                    <div style="margin: 0px 0px 0px 0px">
+                    <b>Name</b>
+                    </div>
+                </label>
+            </center>
+            <center>
+                <div style="margin: 0px 0px 0px 0px">
+                <input type="text" name="tname" style="border-radius: 23px 23px 23px 23px;padding: 6px 0px 8px 10px"placeholder="Enter Your Name" required/>
+                </div>
+            </center>
+            <br>
+                <center>
+            <label>
+                <div style="margin: 0px 0px 0px 0px">
+                <b>Department</b>
+                </div>
+            </label>
+        </center>
+        <center>
+            <div style="margin: 0px 0px 0px 0px">
+                        <select name="dept" style="border-radius: 23px 23px 23px 23px;padding: 6px 0px 8px 10px"required>
+                            <option value="-1"> Select Department</option>
+                                <option value="cse">CSE</option>
+                                <option value="mech">MECH</option>
+                                <option value="ece">ECE</option>
+                                <option value="tce">TCE</option>
+                            </select>
+            </div>
+        </center>           
+            <br>
+            <center>
+                <label>
+                    <div style="margin: 0px 0px 0px 0px">
+                    <b>Password</b>
+                    </div>
+                </label>
+            </center>
+            <center>
+                <div style="margin: 0px 0px 0px 0px">
+                <input type="password"style="border-radius: 23px 23px 23px 23px;padding: 6px 0px 8px 10px" name="pwd" id="p" placeholder="****************" required/>
+                </div>
+            </center>
+            <br>
+            <center>
+                <div style="margin: 0px 0px 0px 0px">
+                <label>
+                    <b>Confirm Password</b>
+                </label>
+                </div>
+            </center>
+            <center>
+                <div style="margin: 0px 0px 0px 0px">
+                <input type="text"style="border-radius: 23px 23px 23px 23px;padding: 6px 0px 8px 10px" name="cpwd" id="cp"/>
+                </div>
+            </center>
+            <center>
+                   <span id="msg" style="color:red;margin: 0px 0px 0px 190px"></span>
+            </center>
+            <br>
+            <center>
+                <label>
+                    <div style="margin: 0px 0px 0px 0px">
+                    <b>Email</b>
+                    </div>
+                </label>
+            </center>
+            <center>
+                <input type="email" name="email"style="border-radius: 23px 23px 23px 23px;padding: 6px 0px 8px 10px" placeholder="Enter Your Email" required/>
+            </center>
+            <br>
+            <center>
+                <button type="next" name="next"id="reg" onClick="return validate()">Next</button>
+        </center>
+                </form>    
+</div>
+    <form >
+        <br>
+        <center>
+        <span class="" ><b>Already an User</b><a href="tlogin.html">Click Here...</a></span>
+        </center>
+    </form>
+    </body>
+</html>
